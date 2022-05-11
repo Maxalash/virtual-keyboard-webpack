@@ -1,0 +1,92 @@
+.keyboard {
+    position: absolute;
+    margin: 300px auto;
+    width: 927px;
+    padding: 5px 6px;
+    right: 50%;
+    margin-right: -463.5px;
+    background: #293e3a;
+    box-shadow: 0 0 50px rgba(0, 0, 0, 0.5);
+    user-select: none;
+    border-radius: 4px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* .keyboard--hidden {
+    bottom: -100%;
+} */
+
+.keyboard__keys {
+    text-align: center;
+}
+
+.keyboard__key {
+    height: 45px;
+    margin: 3px;
+    border-radius: 4px;
+    border: none;
+    background: rgba(255, 255, 255, 0.286);
+    color: #ffffff;
+    font-size: 1.05rem;
+    outline: none;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    vertical-align: top;
+    padding: 0;
+    -webkit-tap-highlight-color: transparent;
+    position: relative;
+}
+
+.k1{
+    width: 55px;
+}
+
+.keyboard__key:active {
+    background: #08ff00;
+}
+
+.k2{
+    width: 64px;
+}
+.k3{
+    width: 116px;
+}
+.k4{
+    width: 126px;
+}
+
+.k5{
+    width: 431px;
+}
+
+.caps::after {
+    content: '';
+    top: 8px;
+    right: 8px;
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    background: rgb(0, 0, 0);
+    border-radius: 50%;
+    z-index: 30;
+    border: 2px solid rgb(60, 60, 60);
+}
+
+.caps--active::after{
+    background: #0eaf49;
+}
+
+.keyboard__key--dark {
+    background: rgba(0, 0, 0, 0.25);
+}
+textarea{
+    position: absolute;
+    top:50px;
+    width: 928px;
+    right: 50%;
+    margin-right: -464px;
+    border-radius: 4px;
+}
